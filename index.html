@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+ <head>   
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NeungHan's Portfolio</title>
     <meta name="description" content="Portfolio for world-renowned software engineer NeungHan">
@@ -11,20 +10,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
     <script src="https://kit.fontawesome.com/be541afa39.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+    <h1>Heading</h1>
+    <h2>Heading</h2>
+    <h3>Heading</h3>
+    <p>Paragraph</p>
     <!-- Navbar -->
-    <nav id="navber">
-        <div class="navbar__logo"></div>
+    <nav id="navbar">
+        <div class="navbar__logo">
             <i class="fas fa-people-arrows"></i>
             <a href="">NeungHan</a>
+        </div>    
         <div class="navbar__menu">
             <!-- ul.navbar__menu>li.navbar__menu__item*6 -->
             <ul class="navbar__menu">
-                <li class="navbar__menu__item">Home</li>
+                <li class="navbar__menu__item active">Home</li>
                 <li class="navbar__menu__item">About</li>
                 <li class="navbar__menu__item">Skills</li>
                 <li class="navbar__menu__item">My work</li>
@@ -35,13 +39,13 @@
     </nav>
     <!-- Home -->
     <section id="home">
-        <img src="img/KakaoTalk_Photo_2021-12-15-16-45-37.png" alt="dog" class="home__avatar">
+        <img src="img/5.jpg" alt="dog" class="home__avatar">
         <h1 class="home__title">Hello,<br /> I'm Han Coder</h1>
         <h2 class="home__description">저는 풀스텍개발자를 원하는 신입 개발자에요</h2>
         <button class="home__contact">Contact me</button>
     </section>
     <!-- About -->
-    <section id="about">
+    <section id="about" class="section">
         <h1>About me</h1>
         <p> 자신을 나타 낼  수 있는 문구 사용 하기 </p>
         <div class="about__majors">
@@ -49,7 +53,7 @@
                 <div class="major__icon">
                     <i class="fab fa-html5"></i>
                 </div>
-                <div class="major__title">Front-end</div>
+                <h2 class="major__title">Front-end</h2>
                 <div class="major__description">
                     HTML, CSS, JavaScript, TypeScript,
                     <br />React, Vue, Web APIs
@@ -59,7 +63,7 @@
                 <div class="major__icon">
                     <i class="fab fa-html5"></i>
                 </div>
-                <div class="major__title">Front-end</div>
+                <h2 class="major__title">Front-end</h2>
                 <div class="major__description">
                     HTML, CSS, JavaScript, TypeScript,
                     <br />React, Vue, Web APIs
@@ -69,7 +73,7 @@
                 <div class="major__icon">
                     <i class="fab fa-html5"></i>
                 </div>
-                <div class="major__title">Front-end</div>
+                <h2 class="major__title">Front-end</h2>
                 <div class="major__description">
                     HTML, CSS, JavaScript, TypeScript,
                     <br />React, Vue, Web APIs
@@ -79,18 +83,23 @@
         <div class="about__jobs">
             <div class="job">
                 <img src="img/KakaoTalk_Image_2021-12-15-19-14-46.png" alt="apple" class="job_logo">
-                <p class="job_name"> 알라딘 </p>
-                <p class="job_period"> 2년 </p>
+                <div class="job__description">
+                    <p class="job_name"> 알라딘 </p>
+                    <p class="job_period"> 2년 </p>
+                </div>
             </div>
+            
             <div class="job">
                 <img src="img/KakaoTalk_Image_2021-12-15-19-14-46.png" alt="apple" class="job_logo">
-                <p class="job_name"> 알라딘 </p>
-                <p class="job_period"> 2년 </p>
+                <div class="job__description">
+                    <p class="job_name"> 알라딘 </p>
+                    <p class="job_period"> 2년 </p>
+                </div>
             </div>
         </div> 
     </section>
     <!-- Skills -->
-    <section id="skills">
+    <section id="skills" class="section">
         <h1>Skills</h1>
         <h2>Skills & Attributes</h2>
         <p>
@@ -136,7 +145,7 @@
 
     </section>
     <!-- Work -->
-    <section id="work">
+    <section id="work" class="section">
         <!-- 나중에 만들때 자기가 원는 만큼 복사해서 사용하기 -->
         <h1>My work</h1>
         <h3>Projects</h3>
@@ -157,7 +166,7 @@
         </div>
     </section>
     <!-- Testimonials -->
-    <section id="testimonials">
+    <section id="testimonials" class="section">
         <h1>Testimonials</h1>
         <h3>See what they say about me</h3>
         <div class="testimonials">
@@ -182,7 +191,7 @@
         </div>
     </section>
     <!-- Contact -->
-    <section id="conatact">
+    <section id="conatact" class="section">
         <h1 class="contack__title">Let's talk</h1>
         <h1 class="contack__email">lollolzz1018@gmail.com</h1>
         <div class="contac__links">
