@@ -108,7 +108,7 @@
     font-size: var(--font-regular);
     font-weight: var(--font-regular);
     color: var(--bs-body-color);
-    margin: 4px 0;
+    margin: 14px 0;
   }
   /* Navbar */
   #navbar {
@@ -182,16 +182,17 @@
   
   /* Home */
   #home {
-    background: url('/img/home-background1.jpg') center/cover no-repeat;
+    background: url('/img/home-background6.png') center/cover no-repeat;
     padding: 40px;
     padding-top: 120px;
     text-align: center;
     /* 인라인 콘텐츠를 줄 상자의 가운데로 정렬 */
   }
   .home__avatar {
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 325px;
     border-radius: 50%;
+    border: 2px solid lightgray;
 
   }
   
@@ -201,6 +202,14 @@
     font-size: var(--bs-body-font-size);
     font-family: var(--bs-body-font-family);
     font-weight: var(--weight-bold);
+  }
+
+  .home__title{
+    padding-top: 40px;
+  }
+
+  .home__description{
+    padding-bottom: 40px;
   }
   
   .home__contact {
@@ -345,7 +354,7 @@
   
   .tools,
   .etc {
-    padding: 20px;
+    padding: 40px;
   }
   
   /* Work */
